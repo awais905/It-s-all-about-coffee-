@@ -3,99 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Menu - It's All About Coffee</title>
+  <title>Menu | It's All About Coffee</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #fefefe;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #3e2723;
-      color: #fff;
-      padding: 1rem;
+      background: #1e1e1e;
+      padding: 20px;
       text-align: center;
+      border-bottom: 2px solid #444;
     }
-    h1 {
+
+    header h1 {
       margin: 0;
+      font-size: 2em;
+      color: #d4a373;
     }
+
+    header p {
+      margin-top: 5px;
+      color: #bbb;
+      font-style: italic;
+    }
+
     .menu-container {
-      padding: 2rem;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
     }
-    .category {
-      margin-bottom: 2rem;
+
+    .menu-item {
+      background-color: #1f1f1f;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 4px solid #d4a373;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
-    .category h2 {
-      color: #3e2723;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
+
+    .menu-item h2 {
+      margin: 0;
+      color: #fff;
     }
-    .item {
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5rem 0;
-      border-bottom: 1px dashed #ccc;
+
+    .menu-item p {
+      margin: 5px 0 10px;
+      color: #ccc;
     }
-    .item-name {
+
+    .price {
       font-weight: bold;
+      color: #d4a373;
     }
-    .item-price {
-      color: #795548;
+
+    footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+      font-size: 0.9em;
+      border-top: 2px solid #444;
+    }
+
+    @media (max-width: 600px) {
+      .menu-container {
+        padding: 10px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Our Menu</h1>
-    <p>Delicious coffee, pastries, and more</p>
+    <p>Natural Coffee · Handcrafted with Love</p>
   </header>
 
   <div class="menu-container">
-    <div class="category">
-      <h2>Coffee</h2>
-      <div class="item">
-        <span class="item-name">Espresso</span>
-        <span class="item-price">$2.50</span>
-      </div>
-      <div class="item">
-        <span class="item-name">Cappuccino</span>
-        <span class="item-price">$3.50</span>
-      </div>
-      <div class="item">
-        <span class="item-name">Latte</span>
-        <span class="item-price">$3.75</span>
-      </div>
+    <div class="menu-item">
+      <h2>Espresso</h2>
+      <p>Strong, bold, and pure — our signature espresso shot.</p>
+      <span class="price">Rs. 350</span>
     </div>
 
-    <div class="category">
-      <h2>Pastries</h2>
-      <div class="item">
-        <span class="item-name">Croissant</span>
-        <span class="item-price">$2.00</span>
-      </div>
-      <div class="item">
-        <span class="item-name">Chocolate Muffin</span>
-        <span class="item-price">$2.75</span>
-      </div>
-      <div class="item">
-        <span class="item-name">Blueberry Danish</span>
-        <span class="item-price">$3.25</span>
-      </div>
+    <div class="menu-item">
+      <h2>Cappuccino</h2>
+      <p>Rich espresso with steamed milk and a thick layer of foam.</p>
+      <span class="price">Rs. 450</span>
     </div>
 
-    <div class="category">
-      <h2>Specials</h2>
-      <div class="item">
-        <span class="item-name">Cold Brew</span>
-        <span class="item-price">$4.00</span>
-      </div>
-      <div class="item">
-        <span class="item-name">Pumpkin Spice Latte</span>
-        <span class="item-price">$4.50</span>
-      </div>
+    <div class="menu-item">
+      <h2>Latte</h2>
+      <p>Smooth and creamy with the perfect espresso-milk balance.</p>
+      <span class="price">Rs. 480</span>
+    </div>
+
+    <div class="menu-item">
+      <h2>Cold Brew</h2>
+      <p>Slow-steeped coffee served chilled, bold and refreshing.</p>
+      <span class="price">Rs. 500</span>
+    </div>
+
+    <div class="menu-item">
+      <h2>Mocha</h2>
+      <p>Espresso meets rich chocolate with velvety steamed milk.</p>
+      <span class="price">Rs. 520</span>
+    </div>
+
+    <div class="menu-item">
+      <h2>Hazelnut Frappe</h2>
+      <p>Chilled blend of coffee, cream, and hazelnut flavor.</p>
+      <span class="price">Rs. 550</span>
+    </div>
+
+    <div class="menu-item">
+      <h2>Fresh Croissant</h2>
+      <p>Buttery, flaky, and baked fresh every morning.</p>
+      <span class="price">Rs. 300</span>
+    </div>
+
+    <div class="menu-item">
+      <h2>Chocolate Muffin</h2>
+      <p>Soft, rich muffin bursting with chocolate chips.</p>
+      <span class="price">Rs. 280</span>
     </div>
   </div>
+
+  <footer>
+    © 2025 It's All About Coffee — All rights reserved.
+  </footer>
 </body>
 </html>
-
