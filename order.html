@@ -1,42 +1,178 @@
-<form action="https://formspree.io/f/your-form-id" method="POST">
-  <h3 style="color:#d6a86c; margin-bottom: 1rem;">Select Your Coffee</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order | It's All About Coffee</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #d6a86c;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    h2 {
+      color: #d6a86c;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin: 12px 0 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #2a2a2a;
+      color: #fff;
+      width: 100%;
+      margin-top: 5px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      background-color: #d6a86c;
+      color: #121212;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #c5974d;
+    }
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+    hr {
+      border: 1px solid #333;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>It's All About Coffee</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html">Order</a>
+    </nav>
+  </header>
 
-  <label>
-    <input type="checkbox" name="Cappuccino" value="Yes" />
-    Cappuccino
-    <input type="number" name="Cappuccino_qty" placeholder="Qty" min="1" style="width: 60px; margin-left: 10px;" />
-  </label>
+  <div class="container">
+    <h2>Place Your Order</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <h3 style="color:#d6a86c; margin-bottom: 1rem;">Select Your Coffee</h3>
 
-  <label>
-    <input type="checkbox" name="Latte" value="Yes" />
-    Latte
-    <input type="number" name="Latte_qty" placeholder="Qty" min="1" style="width: 60px; margin-left: 10px;" />
-  </label>
+      <label>
+        <span>Cappuccino</span>
+        <span>
+          <input type="checkbox" name="Cappuccino" value="Yes" />
+          <input type="number" name="Cappuccino_qty" placeholder="Qty" min="1" />
+        </span>
+      </label>
 
-  <label>
-    <input type="checkbox" name="Espresso" value="Yes" />
-    Espresso
-    <input type="number" name="Espresso_qty" placeholder="Qty" min="1" style="width: 60px; margin-left: 10px;" />
-  </label>
+      <label>
+        <span>Latte</span>
+        <span>
+          <input type="checkbox" name="Latte" value="Yes" />
+          <input type="number" name="Latte_qty" placeholder="Qty" min="1" />
+        </span>
+      </label>
 
-  <label>
-    <input type="checkbox" name="Mocha" value="Yes" />
-    Mocha
-    <input type="number" name="Mocha_qty" placeholder="Qty" min="1" style="width: 60px; margin-left: 10px;" />
-  </label>
+      <label>
+        <span>Espresso</span>
+        <span>
+          <input type="checkbox" name="Espresso" value="Yes" />
+          <input type="number" name="Espresso_qty" placeholder="Qty" min="1" />
+        </span>
+      </label>
 
-  <label>
-    <input type="checkbox" name="Americano" value="Yes" />
-    Americano
-    <input type="number" name="Americano_qty" placeholder="Qty" min="1" style="width: 60px; margin-left: 10px;" />
-  </label>
+      <label>
+        <span>Mocha</span>
+        <span>
+          <input type="checkbox" name="Mocha" value="Yes" />
+          <input type="number" name="Mocha_qty" placeholder="Qty" min="1" />
+        </span>
+      </label>
 
-  <hr style="margin: 1.5rem 0; border-color: #444;" />
+      <label>
+        <span>Americano</span>
+        <span>
+          <input type="checkbox" name="Americano" value="Yes" />
+          <input type="number" name="Americano_qty" placeholder="Qty" min="1" />
+        </span>
+      </label>
 
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <input type="text" name="phone" placeholder="Your Phone Number" required />
-  <textarea name="message" rows="4" placeholder="Additional Order Notes (Optional)"></textarea>
+      <hr />
 
-  <button type="submit">Place Order</button>
-</form>
+      <label>Your Name
+        <input type="text" name="name" required />
+      </label>
+
+      <label>Your Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>Phone Number
+        <input type="text" name="phone" required />
+      </label>
+
+      <label>Additional Notes
+        <textarea name="message" rows="4" placeholder="Optional notes..."></textarea>
+      </label>
+
+      <button type="submit">Submit Order</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Phone:</strong> 03080432842</p>
+      <p><strong>Email:</strong> awaisaziz8832@gmail.com</p>
+      <p><strong>Location:</strong> Muzaffargarh</p>
+      <p><strong>Hours:</strong> 9 AM – 10 PM</p>
+    </div>
+  </div>
+</body>
+           </html>
+           
