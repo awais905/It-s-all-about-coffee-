@@ -3,67 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | It's All About Coffee</title>
+  <title>About Us - It's All About Coffee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      font-family: 'Montserrat', sans-serif;
+      background: #111;
+      color: #f5f5f5;
     }
     header {
-      background-color: #2e2e2e;
-      color: white;
-      padding: 1rem;
+      background: #000;
+      padding: 20px;
       text-align: center;
+      border-bottom: 2px solid #8B4513;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #C69C6D;
+    }
+    header p {
+      font-size: 1em;
+      color: #a9a9a9;
+      margin-top: 5px;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
     }
     nav a {
-      color: #fff;
-      margin: 0 1rem;
+      color: #C69C6D;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    .content {
-      padding: 2rem;
-      max-width: 800px;
+    nav a:hover {
+      color: #fff;
+    }
+    .container {
+      max-width: 900px;
       margin: auto;
+      padding: 30px;
+      line-height: 1.7;
+      animation: fadeIn 1s ease-in-out;
     }
-    h1 {
-      color: #6f4e37;
+    h2 {
+      color: #C69C6D;
+      margin-bottom: 10px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #999;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h2>It's All About Coffee</h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="menu.html">Menu</a>
-      <a href="order.html">Order</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>It's All About Coffee</h1>
+    <p>Natural Coffee</p>
   </header>
 
-  <div class="content">
-    <h1>About Us</h1>
-    <p><strong>It’s All About Coffee</strong> is more than just a coffee shop – it's a community built around passion, flavor, and the perfect brew. Founded in 2025, our mission is to bring people together over high-quality coffee, cozy vibes, and unforgettable moments.</p>
-    
-    <p>Our beans are ethically sourced, roasted to perfection, and brewed with love. Whether you're ordering online or enjoying a cup in-store, we promise quality and warmth in every sip.</p>
-    
-    <p>We believe that great coffee should be accessible to everyone — and that’s what we deliver daily.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <h3>Our Vision</h3>
-    <p>To become Pakistan’s most loved coffee brand, one cup at a time.</p>
+  <div class="container">
+    <h2>Who We Are</h2>
+    <p>
+      Welcome to "It's All About Coffee" – where every cup tells a story.
+      We're not just a coffee shop, we're a community built on passion for rich, natural flavors.
+    </p>
 
-    <h3>Our Mission</h3>
-    <ul>
-      <li>Serve premium, ethically sourced coffee</li>
-      <li>Support local communities and growers</li>
-      <li>Create a welcoming space for all coffee lovers</li>
-    </ul>
+    <h2>Our Mission</h2>
+    <p>
+      To serve the finest, freshly brewed coffee in an environment that feels like home. 
+      We believe in sustainability, organic sourcing, and delivering authentic coffee experiences.
+    </p>
+
+    <h2>Why Choose Us?</h2>
+    <p>
+      - Premium beans, locally roasted<br>
+      - Skilled baristas with a love for coffee<br>
+      - Cozy, modern ambiance with a natural vibe<br>
+      - Fast, easy online ordering and warm dine-in experience
+    </p>
   </div>
 
+  <footer>
+    &copy; 2025 It's All About Coffee. All rights reserved.
+  </footer>
 </body>
 </html>
