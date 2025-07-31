@@ -2,140 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menu | It's All About Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - It's All About Coffee</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #121212;
-      color: #f1f1f1;
-      line-height: 1.6;
+      color: #f2f2f2;
     }
 
     header {
-      background: #1e1e1e;
-      padding: 20px;
+      background-color: #1f1f1f;
+      padding: 15px 0;
       text-align: center;
-      border-bottom: 2px solid #444;
+      border-bottom: 1px solid #333;
     }
 
     header h1 {
-      margin: 0;
       font-size: 2em;
-      color: #d4a373;
+      color: #c79288;
     }
 
-    header p {
-      margin-top: 5px;
-      color: #bbb;
-      font-style: italic;
+    nav {
+      margin-top: 10px;
     }
 
-    .menu-container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
+    nav a {
+      color: #e0e0e0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
     }
 
     .menu-item {
-      background-color: #1f1f1f;
-      margin-bottom: 20px;
+      background-color: #1e1e1e;
       padding: 20px;
+      margin-bottom: 20px;
       border-radius: 12px;
-      border-left: 4px solid #d4a373;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
     .menu-item h2 {
-      margin: 0;
-      color: #fff;
+      color: #f48fb1;
+      margin-bottom: 8px;
     }
 
-    .menu-item p {
-      margin: 5px 0 10px;
-      color: #ccc;
+    .urdu {
+      font-size: 1.2em;
+      color: #a5d6a7;
     }
 
-    .price {
-      font-weight: bold;
-      color: #d4a373;
+    .ingredients {
+      font-size: 1em;
+      color: #ffcc80;
+      margin-top: 10px;
     }
 
     footer {
-      background: #1e1e1e;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
+      background-color: #1f1f1f;
       color: #aaa;
-      font-size: 0.9em;
-      border-top: 2px solid #444;
-    }
-
-    @media (max-width: 600px) {
-      .menu-container {
-        padding: 10px;
-      }
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Our Menu</h1>
-    <p>Natural Coffee · Handcrafted with Love</p>
+    <h1>Our Coffee Menu ☕</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
   </header>
 
-  <div class="menu-container">
+  <div class="container">
     <div class="menu-item">
-      <h2>Espresso</h2>
-      <p>Strong, bold, and pure — our signature espresso shot.</p>
-      <span class="price">Rs. 350</span>
+      <h2>1. Cappuccino <span class="urdu">– کیپوچینو</span></h2>
+      <p class="ingredients">اجزاء: دودھ، ایسپریسو کافی، فوم</p>
     </div>
 
     <div class="menu-item">
-      <h2>Cappuccino</h2>
-      <p>Rich espresso with steamed milk and a thick layer of foam.</p>
-      <span class="price">Rs. 450</span>
+      <h2>2. Latte <span class="urdu">– لاٹے</span></h2>
+      <p class="ingredients">اجزاء: دودھ، کافی، شکر (اختیاری)</p>
     </div>
 
     <div class="menu-item">
-      <h2>Latte</h2>
-      <p>Smooth and creamy with the perfect espresso-milk balance.</p>
-      <span class="price">Rs. 480</span>
+      <h2>3. Espresso <span class="urdu">– ایسپریسو</span></h2>
+      <p class="ingredients">اجزاء: خالص کافی، بغیر دودھ</p>
     </div>
 
     <div class="menu-item">
-      <h2>Cold Brew</h2>
-      <p>Slow-steeped coffee served chilled, bold and refreshing.</p>
-      <span class="price">Rs. 500</span>
+      <h2>4. Cold Coffee <span class="urdu">– ٹھنڈی کافی</span></h2>
+      <p class="ingredients">اجزاء: دودھ، برف، کافی، شکر</p>
     </div>
 
     <div class="menu-item">
-      <h2>Mocha</h2>
-      <p>Espresso meets rich chocolate with velvety steamed milk.</p>
-      <span class="price">Rs. 520</span>
+      <h2>5. Mocha <span class="urdu">– موکا</span></h2>
+      <p class="ingredients">اجزاء: چاکلیٹ، کافی، دودھ، فوم</p>
     </div>
 
     <div class="menu-item">
-      <h2>Hazelnut Frappe</h2>
-      <p>Chilled blend of coffee, cream, and hazelnut flavor.</p>
-      <span class="price">Rs. 550</span>
+      <h2>6. Black Coffee <span class="urdu">– سادہ کافی</span></h2>
+      <p class="ingredients">اجزاء: پانی، کافی، بغیر دودھ</p>
     </div>
 
     <div class="menu-item">
-      <h2>Fresh Croissant</h2>
-      <p>Buttery, flaky, and baked fresh every morning.</p>
-      <span class="price">Rs. 300</span>
+      <h2>7. Dalgona Coffee <span class="urdu">– ڈالگونا کافی</span></h2>
+      <p class="ingredients">اجزاء: کافی، چینی، گرم پانی، دودھ</p>
     </div>
 
     <div class="menu-item">
-      <h2>Chocolate Muffin</h2>
-      <p>Soft, rich muffin bursting with chocolate chips.</p>
-      <span class="price">Rs. 280</span>
+      <h2>8. Desi Chai Coffee Blend <span class="urdu">– دیسی چائے کافی</span></h2>
+      <p class="ingredients">اجزاء: چائے، کافی، دودھ، مسالہ</p>
     </div>
   </div>
 
   <footer>
-    © 2025 It's All About Coffee — All rights reserved.
+    &copy; 2025 It's All About Coffee. All rights reserved.
   </footer>
 </body>
 </html>
