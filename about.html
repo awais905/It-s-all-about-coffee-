@@ -1,109 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us - It's All About Coffee</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ہمارے بارے میں - It's All About Coffee</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #111;
-      color: #f5f5f5;
+      background-color: #121212;
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
     }
-    header {
-      background: #000;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #8B4513;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #C69C6D;
-    }
-    header p {
-      font-size: 1em;
-      color: #a9a9a9;
-      margin-top: 5px;
-    }
-    nav {
-      text-align: center;
-      margin: 20px 0;
-    }
-    nav a {
-      color: #C69C6D;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px;
-      line-height: 1.7;
-      animation: fadeIn 1s ease-in-out;
-    }
-    h2 {
-      color: #C69C6D;
-      margin-bottom: 10px;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      color: #999;
-      font-size: 0.9em;
-      border-top: 1px solid #333;
-      margin-top: 40px;
+    .urdu-font {
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>It's All About Coffee</h1>
-    <p>Natural Coffee</p>
+<body class="text-white urdu-font">
+
+  <header class="bg-black text-white py-6 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">It's All About Coffee</h1>
+      <nav class="space-x-4 text-lg">
+        <a href="index.html" class="hover:text-yellow-400">ہوم</a>
+        <a href="about.html" class="hover:text-yellow-400">ہمارے بارے میں</a>
+        <a href="menu.html" class="hover:text-yellow-400">مینو</a>
+        <a href="order.html" class="hover:text-yellow-400">آرڈر</a>
+        <a href="contact.html" class="hover:text-yellow-400">رابطہ کریں</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="menu.html">Menu</a>
-    <a href="order.html">Order</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="container">
-    <h2>Who We Are</h2>
-    <p>
-      Welcome to "It's All About Coffee" – where every cup tells a story.
-      We're not just a coffee shop, we're a community built on passion for rich, natural flavors.
+  <main class="py-16 px-6 text-center max-w-4xl mx-auto text-white">
+    <h2 class="text-4xl font-bold mb-6">ہمارے بارے میں</h2>
+    <p class="text-lg leading-relaxed">
+      "It's All About Coffee" ایک ایسا کیفے ہے جہاں خالص اور قدرتی کافی کے ذائقے کو خاص انداز میں پیش کیا جاتا ہے۔ ہم تازہ ترین کافی بینز استعمال کرتے ہیں جو ذائقے اور خوشبو میں منفرد ہوتے ہیں۔ ہماری ٹیم پیشہ ور باریستا پر مشتمل ہے جو ہر کپ کو آپ کے لئے خاص بناتے ہیں۔
     </p>
-
-    <h2>Our Mission</h2>
-    <p>
-      To serve the finest, freshly brewed coffee in an environment that feels like home. 
-      We believe in sustainability, organic sourcing, and delivering authentic coffee experiences.
+    <br>
+    <p class="text-lg leading-relaxed">
+      چاہے آپ گرم کافی پسند کریں یا ٹھنڈی، ہمارے مینو میں آپ کے ہر ذوق کے مطابق کچھ نہ کچھ موجود ہے۔ ہمارا مقصد صرف کافی بیچنا نہیں بلکہ ایک یادگار تجربہ فراہم کرنا ہے۔
     </p>
-
-    <h2>Why Choose Us?</h2>
-    <p>
-      - Premium beans, locally roasted<br>
-      - Skilled baristas with a love for coffee<br>
-      - Cozy, modern ambiance with a natural vibe<br>
-      - Fast, easy online ordering and warm dine-in experience
+    <br>
+    <p class="text-lg leading-relaxed">
+      "It's All About Coffee" میں خوش آمدید! یہاں آپ کو ملے گا ذائقہ، خلوص، اور وہ احساس جو ایک کپ کافی میں چھپا ہوتا ہے۔
     </p>
-  </div>
+  </main>
 
-  <footer>
-    &copy; 2025 It's All About Coffee. All rights reserved.
+  <footer class="bg-black text-center py-6 mt-10 border-t border-gray-800">
+    <p>&copy; 2025 It's All About Coffee. تمام حقوق محفوظ ہیں۔</p>
   </footer>
+
 </body>
 </html>
