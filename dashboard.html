@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - It's All About Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1e1e;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ffeaa7;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #2d2d2d;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+
+    th {
+      background-color: #3d3d3d;
+      color: #f5f5f5;
+    }
+
+    tr:hover {
+      background-color: #383838;
+    }
+
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th, td {
+        text-align: left;
+        padding: 10px;
+      }
+
+      th {
+        background-color: #444;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Order Dashboard</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Customer Name</th>
+        <th>Phone Number</th>
+        <th>Coffee Type</th>
+        <th>Quantity</th>
+        <th>Payment</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Awais Aziz</td>
+        <td>03080432842</td>
+        <td>Latte</td>
+        <td>2</td>
+        <td>JazzCash</td>
+        <td>9:15 AM</td>
+      </tr>
+      <tr>
+        <td>Ali Khan</td>
+        <td>03011223344</td>
+        <td>Cappuccino</td>
+        <td>1</td>
+        <td>PayPal</td>
+        <td>9:45 AM</td>
+      </tr>
+      <!-- More fake data rows -->
+    </tbody>
+  </table>
+</body>
+</html>
