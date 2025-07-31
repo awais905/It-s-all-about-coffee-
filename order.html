@@ -1,178 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Order | It's All About Coffee</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #fff;
-    }
-    header {
-      background-color: #1f1f1f;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      color: #d6a86c;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1e1e1e;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    }
-    h2 {
-      color: #d6a86c;
-      text-align: center;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    label {
-      margin: 12px 0 4px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    textarea {
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      background-color: #2a2a2a;
-      color: #fff;
-      width: 100%;
-      margin-top: 5px;
-    }
-    textarea {
-      resize: vertical;
-    }
-    button {
-      background-color: #d6a86c;
-      color: #121212;
-      border: none;
-      padding: 12px;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 20px;
-      transition: background 0.3s ease;
-    }
-    button:hover {
-      background-color: #c5974d;
-    }
-    .contact-info {
-      margin-top: 30px;
-      text-align: center;
-      font-size: 14px;
-      color: #aaa;
-    }
-    hr {
-      border: 1px solid #333;
-      margin: 20px 0;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>It's All About Coffee</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="menu.html">Menu</a>
-      <a href="contact.html">Contact</a>
-      <a href="order.html">Order</a>
-    </nav>
-  </header>
+<!-- Add this below your order form in order.html -->
 
-  <div class="container">
-    <h2>Place Your Order</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <h3 style="color:#d6a86c; margin-bottom: 1rem;">Select Your Coffee</h3>
-
-      <label>
-        <span>Cappuccino</span>
-        <span>
-          <input type="checkbox" name="Cappuccino" value="Yes" />
-          <input type="number" name="Cappuccino_qty" placeholder="Qty" min="1" />
-        </span>
-      </label>
-
-      <label>
-        <span>Latte</span>
-        <span>
-          <input type="checkbox" name="Latte" value="Yes" />
-          <input type="number" name="Latte_qty" placeholder="Qty" min="1" />
-        </span>
-      </label>
-
-      <label>
-        <span>Espresso</span>
-        <span>
-          <input type="checkbox" name="Espresso" value="Yes" />
-          <input type="number" name="Espresso_qty" placeholder="Qty" min="1" />
-        </span>
-      </label>
-
-      <label>
-        <span>Mocha</span>
-        <span>
-          <input type="checkbox" name="Mocha" value="Yes" />
-          <input type="number" name="Mocha_qty" placeholder="Qty" min="1" />
-        </span>
-      </label>
-
-      <label>
-        <span>Americano</span>
-        <span>
-          <input type="checkbox" name="Americano" value="Yes" />
-          <input type="number" name="Americano_qty" placeholder="Qty" min="1" />
-        </span>
-      </label>
-
-      <hr />
-
-      <label>Your Name
-        <input type="text" name="name" required />
-      </label>
-
-      <label>Your Email
-        <input type="email" name="email" required />
-      </label>
-
-      <label>Phone Number
-        <input type="text" name="phone" required />
-      </label>
-
-      <label>Additional Notes
-        <textarea name="message" rows="4" placeholder="Optional notes..."></textarea>
-      </label>
-
-      <button type="submit">Submit Order</button>
-    </form>
-
-    <div class="contact-info">
-      <p><strong>Phone:</strong> 03080432842</p>
-      <p><strong>Email:</strong> awaisaziz8832@gmail.com</p>
-      <p><strong>Location:</strong> Muzaffargarh</p>
-      <p><strong>Hours:</strong> 9 AM – 10 PM</p>
+<section class="mt-10 p-6 rounded-2xl bg-gray-800 text-white shadow-lg">
+  <h2 class="text-2xl font-bold mb-4 text-center text-yellow-400">Payment Options</h2>
+  <p class="mb-4 text-center text-gray-300">Please use any of the following methods to complete your payment. All payments should be made to:</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+    <div class="bg-gray-700 p-4 rounded-xl border border-yellow-500">
+      <h3 class="text-lg font-semibold text-yellow-300">JazzCash</h3>
+      <p class="text-sm mt-2">Number: <strong>03080432842</strong></p>
+      <p class="text-sm">Account Title: <strong>Awais Aziz</strong></p>
+    </div>
+    <div class="bg-gray-700 p-4 rounded-xl border border-green-500">
+      <h3 class="text-lg font-semibold text-green-300">Easypaisa</h3>
+      <p class="text-sm mt-2">Number: <strong>03080432842</strong></p>
+      <p class="text-sm">Account Title: <strong>Awais Aziz</strong></p>
+    </div>
+    <div class="bg-gray-700 p-4 rounded-xl border border-blue-400">
+      <h3 class="text-lg font-semibold text-blue-300">PayPal</h3>
+      <p class="text-sm mt-2">Number: <strong>03080432842</strong></p>
+      <p class="text-sm">Account Title: <strong>Awais Aziz</strong></p>
     </div>
   </div>
-</body>
-           </html>
-           
+</section>
