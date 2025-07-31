@@ -1,23 +1,82 @@
-<!-- Add this below your order form in order.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Coffee - It's All About Coffee</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
 
-<section class="mt-10 p-6 rounded-2xl bg-gray-800 text-white shadow-lg">
-  <h2 class="text-2xl font-bold mb-4 text-center text-yellow-400">Payment Options</h2>
-  <p class="mb-4 text-center text-gray-300">Please use any of the following methods to complete your payment. All payments should be made to:</p>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-    <div class="bg-gray-700 p-4 rounded-xl border border-yellow-500">
-      <h3 class="text-lg font-semibold text-yellow-300">JazzCash</h3>
-      <p class="text-sm mt-2">Number: <strong>03080432842</strong></p>
-      <p class="text-sm">Account Title: <strong>Awais Aziz</strong></p>
-    </div>
-    <div class="bg-gray-700 p-4 rounded-xl border border-green-500">
-      <h3 class="text-lg font-semibold text-green-300">Easypaisa</h3>
-      <p class="text-sm mt-2">Number: <strong>03080432842</strong></p>
-      <p class="text-sm">Account Title: <strong>Awais Aziz</strong></p>
-    </div>
-    <div class="bg-gray-700 p-4 rounded-xl border border-blue-400">
-      <h3 class="text-lg font-semibold text-blue-300">PayPal</h3>
-      <p class="text-sm mt-2">Number: <strong>03080432842</strong></p>
-      <p class="text-sm">Account Title: <strong>Awais Aziz</strong></p>
-    </div>
-  </div>
-</section>
+  <header class="p-4 bg-black shadow-md flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-yellow-400">It's All About Coffee</h1>
+    <nav class="space-x-6 text-gray-200">
+      <a href="index.html" class="hover:text-yellow-400">Home</a>
+      <a href="about.html" class="hover:text-yellow-400">About</a>
+      <a href="menu.html" class="hover:text-yellow-400">Menu</a>
+      <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+      <a href="order.html" class="text-yellow-400 font-bold underline">Order</a>
+    </nav>
+  </header>
+
+  <main class="p-6 max-w-4xl mx-auto mt-8">
+
+    <!-- ORDER FORM -->
+    <section class="bg-gray-800 p-6 rounded-2xl shadow-lg">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center">Place Your Coffee Order</h2>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" placeholder="Your Name" class="p-3 rounded bg-gray-700 text-white" required>
+        <input type="email" placeholder="Your Email" class="p-3 rounded bg-gray-700 text-white" required>
+        <input type="tel" placeholder="Phone Number" class="p-3 rounded bg-gray-700 text-white" required>
+        <input type="text" placeholder="Location" class="p-3 rounded bg-gray-700 text-white" required>
+        
+        <!-- Coffee Selection -->
+        <select class="p-3 rounded bg-gray-700 text-white col-span-1 md:col-span-2" required>
+          <option value="" disabled selected>Select Coffee Type</option>
+          <option>Espresso</option>
+          <option>Latte</option>
+          <option>Cappuccino</option>
+          <option>Americano</option>
+          <option>Mocha</option>
+          <option>Black Coffee</option>
+        </select>
+
+        <textarea placeholder="Special Instructions" class="p-3 rounded bg-gray-700 text-white col-span-1 md:col-span-2" rows="3"></textarea>
+        
+        <button type="submit" class="col-span-1 md:col-span-2 bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-3 rounded transition duration-300">
+          Submit Order
+        </button>
+      </form>
+    </section>
+
+    <!-- PAYMENT SECTION -->
+    <section class="mt-10 p-6 rounded-2xl bg-gray-800 text-white shadow-lg">
+      <h2 class="text-2xl font-bold mb-4 text-center text-yellow-400">Payment Options</h2>
+      <p class="mb-4 text-center text-gray-300">Please use any of the following methods to complete your payment. All payments should be made to:</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-gray-700 p-4 rounded-xl border border-yellow-500">
+          <h3 class="text-lg font-semibold text-yellow-300">JazzCash</h3>
+          <p class="text-sm mt-2">Number: <strong>03080432842</strong></p>
+          <p class="text-sm">Account Title: <strong>Awais Aziz</strong></p>
+        </div>
+        <div class="bg-gray-700 p-4 rounded-xl border border-green-500">
+          <h3 class="text-lg font-semibold text-green-300">Easypaisa</h3>
+          <p class="text-sm mt-2">Number: <strong>03080432842</strong></p>
+          <p class="text-sm">Account Title: <strong>Awais Aziz</strong></p>
+        </div>
+        <div class="bg-gray-700 p-4 rounded-xl border border-blue-400">
+          <h3 class="text-lg font-semibold text-blue-300">PayPal</h3>
+          <p class="text-sm mt-2">Number: <strong>03080432842</strong></p>
+          <p class="text-sm">Account Title: <strong>Awais Aziz</strong></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-10 text-center text-gray-500 text-sm py-4 border-t border-gray-700">
+    &copy; 2025 It's All About Coffee. All rights reserved.
+  </footer>
+
+</body>
+</html>
