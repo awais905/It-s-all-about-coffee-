@@ -2,114 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>It's All About Coffee</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
 
     body {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #f5f5f5;
+      background-color: #0e0e0e;
+      color: #f2f2f2;
     }
 
     header {
-      padding: 2rem;
-      text-align: center;
-      animation: fadeInDown 1.2s ease-out;
+      background-color: #1a1a1a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
-    h1.logo {
-      font-size: 3rem;
-      font-weight: 700;
-      color: #d4a373;
-      letter-spacing: 2px;
-    }
-
-    p.slogan {
-      font-size: 1.2rem;
-      color: #e6ccb2;
-      margin-top: 0.5rem;
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #c49b66;
     }
 
     nav {
-      margin-top: 2rem;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
     }
 
     nav a {
       text-decoration: none;
-      color: #f5f5f5;
-      background-color: #6c584c;
-      margin: 0 1rem;
-      padding: 0.7rem 1.5rem;
-      border-radius: 25px;
-      font-weight: bold;
-      transition: background-color 0.3s;
+      color: #f2f2f2;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
     }
 
     nav a:hover {
-      background-color: #a98467;
+      background-color: #2a2a2a;
+      color: #c49b66;
     }
 
-    main {
-      padding: 4rem 2rem;
+    .hero {
       text-align: center;
-      animation: fadeIn 2s ease-in;
+      padding: 100px 20px;
     }
 
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #c49b66;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    footer {
-      margin-top: 4rem;
-      text-align: center;
-      padding: 1rem;
+    .hero p {
+      font-size: 1.2rem;
       color: #ccc;
-      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1 class="logo">It's All About Coffee</h1>
-    <p class="slogan">Natural Coffee</p>
+    <div class="logo">It's All About Coffee</div>
     <nav>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="menu.html">Menu</a>
       <a href="order.html">Order</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <main>
-    <h2>Welcome to the World of Coffee</h2>
-    <p>Serving the best natural coffee for all coffee lovers. Online & Dine-in available.</p>
-  </main>
-  <footer>
-    &copy; 2025 It's All About Coffee. All rights reserved.
-  </footer>
+
+  <section class="hero">
+    <h1>Natural Coffee</h1>
+    <p>Brewing perfection, one cup at a time ☕</p>
+  </section>
+
 </body>
 </html>
